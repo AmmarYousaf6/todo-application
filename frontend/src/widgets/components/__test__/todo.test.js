@@ -23,4 +23,16 @@ it("it should render TodoInput without crashing", () => {
   const div = document.createElement("div");
   ReactDom.render(<TodoInput></TodoInput>, div);
 });
+
+//check if the TodoItem component renders correctly
+it("it should check if empty data is being posted", () => {
+  const doc = render(<TodoInput />);
+  const inputElement = doc.getByTestId("input");
+  const createButtonElement = doc.getByTestId("createButton");
+
+  fireEvent.change(inputElement, { target: { value: "" } });
+  const doc2 = render(<TodoItem todo={[{ message: "ABC" }]} />);
+  const todos = doc2.getAllByTestId("todo");
+  expect(todos.length).toBe(1);
+});
   
