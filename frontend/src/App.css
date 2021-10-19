@@ -2,6 +2,12 @@
   text-align: center;
 }
 
+.container {
+  width: 20%;
+  font-size: 14px;
+  display: inline-block;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +41,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.todoItems{
+  overflow-y: scroll;
+  height: 50px;
 }
