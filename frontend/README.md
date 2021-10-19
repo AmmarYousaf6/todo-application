@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+<!-- @format -->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Todo App
 
-## Available Scripts
+Todo App is a platform built in MERN stack for keep in track of daily to daily tasks.
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+Install [Node](https://nodejs.org/en/) & [MySql](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+##Database File
+Database Backup file can be found in backend/database_file folder. The file can be imported in the mySql database.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Usage
 
-### `npm test`
+After installation of node, run the following commands in terminal
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    - cd todo-application && cd backend && npm install
 
-### `npm run build`
+    - cd todo-application && cd frontend && npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##Database Connection
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    - create .env file in backend folder and add the following environment variables
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+      DB_HOST={YOUR_LOCALHOST_URL}
+      DB_USER={YOUR_DB_USERNAME}
+      DB_PASSWORD={YOUR_DB_PASSWORD}
+      DB_DATABASE={YOUR_DB_NAME}
 
-### `npm run eject`
+## Test
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Run the following commands to run test cases - npm test
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Both in backend and frontend folder
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Run Server
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Run the following commands to run server
 
-## Learn More
+- cd backend && npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Run Client
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Run the following commands to start client
 
-### Code Splitting
+- cd frontend && npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Architecture
 
-### Analyzing the Bundle Size
+The backend has been developed by following the MVC Architecture. MVC is an architectural pattern consisting of three parts: Model, View, Controller. Model: Handles data logic. View: It displays the information from the model to the user. Controller: It controls the data flow into a model object and updates the view whenever data changes.
+Once the client app is ready, Client will accept data from Server, and server will send data back to the client.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+##Video
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://drive.google.com/file/d/1yMutaEjOuSwU_CRA7wCYjtIhhvbEDhIE/view?usp=sharing)
 
-### Making a Progressive Web App
+## Tools and Technologies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    - Node 14.
+    - Docker
+    - React
+    - MySql
