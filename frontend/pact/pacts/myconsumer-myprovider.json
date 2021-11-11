@@ -1,0 +1,69 @@
+{
+  "consumer": {
+    "name": "MyConsumer"
+  },
+  "provider": {
+    "name": "MyProvider"
+  },
+  "interactions": [
+    {
+      "description": "A request for API health",
+      "providerState": "Server is healthy",
+      "request": {
+        "method": "GET",
+        "path": "/todolist"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+        },
+        "body": {
+          "todolist": "Is it possible to export projects on this app?"
+        }
+      }
+    },
+    {
+      "description": "A request for API health",
+      "request": {
+        "method": "GET",
+        "path": "/todolist"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+        },
+        "body": [
+          {
+            "todolist": "Is it possible to export projects on this app?"
+          }
+        ]
+      }
+    },
+    {
+      "description": "A request to create todo item",
+      "request": {
+        "method": "POST",
+        "path": "/todolist",
+        "headers": {
+          "Accept": "application/json"
+        }
+      },
+      "response": {
+        "status": 201,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": [
+          {
+            "todolist": "Is it possible to export projects on this app?"
+          }
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}

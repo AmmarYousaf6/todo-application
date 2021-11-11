@@ -42,7 +42,7 @@ it("it should render TodoItem without crashing", () => {
 
 it("it should check if buy some milk exists or not", () => {
   const { getByText } = render(<TodoItem todo={[{ message: "ABC" }]} />);
-  expect(getByText("Buys some milk")).toBeInTheDocument();
+  expect(getByText("Buy some milk")).toBeInTheDocument();
 });
 
 //check if the TodoItem component renders correctly
