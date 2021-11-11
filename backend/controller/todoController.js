@@ -25,7 +25,7 @@ const getTodos = (req,res) => {
 const addTodos = (req,res) => {
     const {message} = req.body;
     if(!message){
-        res.status(500).json({
+        res.status(400).json({
             status : 0,
             message : 'Missing input',
             data : []
